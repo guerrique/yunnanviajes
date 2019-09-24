@@ -1,2 +1,48 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="wrapper homepage" style="background-image: linear-gradient(rgba(245,245,245,0.3),rgba(245,245,245,0.3)), url(<%= image_path 'homepage.jpg'%>);">
+  <div class="homepagetitle">
+    <h2>YUNNAN VIAJES</h2>
+    <p>Your guide to China's land of eternal spring</p>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="outerbox">
+        <%= link_to yunnan_path do %>
+        <div class="card-menu" style="background-image:
+        linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'yunnan.jpg' %>);">
+        YUNNAN
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-12 col-lg-4">
+    <div class="outerbox">
+      <%= link_to our_tours_path do %>
+      <div class="card-menu" style="background-image:
+      linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'tours.jpg' %>);">
+      OUR TOURS
+    </div>
+    <% end %>
+  </div>
+</div>
+<div class="col-12 col-lg-4">
+  <div class="outerbox">
+    <%= link_to about_path do %>
+    <div class="card-menu" style="background-image:
+    linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'about.jpg' %>);">
+    ABOUT US
+  </div>
+  <% end %>
+</div>
+</div>
+</div>
+
+
+
+<!--     <div class="card-category"style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+    url('<%#= cl_image_path castle.photo, height: 300, width: 400, crop: :fill %>')">
+    <div class="front-gimmick">
+     <h1><%#= link_to castle.name, castle_path(castle.id) %></h1></div>
+   </div> -->

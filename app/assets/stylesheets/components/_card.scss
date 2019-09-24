@@ -25,3 +25,15 @@
 .card-menu:hover {
   color: rgba(255,255,255,1);
 }
+
+.cards {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  height: 260px;
+  border-radius: 3px;
+}

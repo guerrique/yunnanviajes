@@ -33,7 +33,32 @@
   grid-gap: 20px;
 }
 
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//   .cards {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 260px;
+  width: 260px;
+  border: none;
   border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+  color: rgba(255,255,255,0);
 }
+
+.card:hover {
+  color: rgba(255,255,255,1);
+}
+
+.cardtext {
+  grid-column: 1 / span 3;
+}
+
+

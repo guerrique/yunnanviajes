@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="banner">
-      <h3>YUNNAN VIAJES</h3>
+    <h3>YUNNAN VIAJES</h3>
   </div>
 
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
@@ -35,7 +35,7 @@
         <div class="pagecontent">
           <p>Our tours are exclusive, the fruit of more than 10 years of experience in Yunnan. They are taylor-made to meet the desires of groups or individuals.</p>
           <p>Here are just a few examples of what you can experience with us in Yunnan :
-           </p>
+          </p>
         </div>
       </div>
     </div>
@@ -44,35 +44,85 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-9">
         <div class="cards">
-          <div>
-            <%= image_tag "weishan-card.jpg", class: "card" %>
+          <div class="card" id="weishan" style="background-image: url(<%= image_path 'weishan-card.jpg' %>);">
+            WEISHAN
           </div>
-          <div>
-            <%= image_tag "yuanyang-card.jpg", class: "card" %>
+          <div class="card" id="yuanyang" style="background-image: url(<%= image_path 'yuanyang-card.jpg' %>);">
+            YUANYANG
           </div>
-          <div>
-            <%= image_tag "jianshui-card.jpg", class: "card" %>
+          <div class="card" id="jianshui" style="background-image: url(<%= image_path 'jianshui-card.jpg' %>);">
+            JIANSHUI
           </div>
-          <div>
-            <%= image_tag "nettigerleaping-card.jpg", class: "card" %>
+          <div class="cardtext description pagecontent" id="weishan_description" style="display:none;">
+            Weibaoshan mountain is believed to be one of the fourteen most important Taoist mountains in the country.
+            The ancient city of Weishan, home of the Yi and Hui ethnic minorities, was built more than 600 years ago during the Ming Dynasty.
           </div>
-          <div>
-            <%= image_tag "netdali-card.jpg", class: "card" %>
+          <div class="cardtext description" id="yuanyang_description" style="display: none;">
+            Yuanyang is situated two hours from Jianshui, 1,800m above sea level. In this small community, home to the Yi and Hani minorities, you will find the most stunning and spectacular rice terraces in the world. During the winter and spring, the terraces are transformed into mirrors whose beauty amazes visitors. During these seasons thousands of photographers descend from all over the world to capture the beauty of the area.
           </div>
-          <div>
-            <%= image_tag "netshaxi-card.jpg", class: "card" %>
+          <div class="cardtext description" id="jianshui_description" style="display:none;">
+            Jianshui is located 200km south of Kunming. Travellers going along the Silk Route passed through this ancient city on the way to Vietnam, and it became an active political and military centre in the 13th century. Today, this small city is like a veritable museum of ancient architecture, with its Muslim quarter, its traditional houses and its Mosque, its various Buddhist monasteries, its magnificent Confucius Temple (“Wenmiao”, Temple of Literature) and the second biggest temple in China, built during the Mongol Era (1285). In addition, the house of the Zhu family is an excellent example of a traditional Chinese house with its patios and inner gardens, kiosks and covered galleries.
           </div>
-          <div>
-            <%= image_tag "lijiang-card.jpg", class: "card" %>
+          <div class="card" id="tigerleapinggorge" style="background-image: url(<%= image_path 'nettigerleaping-card.jpg' %>);">
+            TIGER LEAPING GORGE
           </div>
-          <div>
-            <%= image_tag "shangrila-card.jpg", class: "card" %>
+          <div class="card" id="dali" style="background-image: url(<%= image_path 'netdali-card.jpg' %>);">
+            DALI
           </div>
-          <div>
-            <%= image_tag "netshilin-card.jpg", class: "card" %>
+          <div class="card" id="shaxi" style="background-image: url(<%= image_path 'netshaxi-card.jpg' %>);">
+            SHAXI
+          </div>
+          <div class="cardtext description" id="tigerleapinggorge_description" style="display:none;">
+          Around 60 km from Lijiang, the waters of the Yangtze river have created one of the deepest gorges in the world. It extends over 15km, and in some places is 3,900m deep. One of the most spectacular excursions in Yunnan is is the trek along this gorge. Along the way there are a number of villages belonging to the Naxi minority where visitors can find accommodation and food. The name of the gorge, Hutiao Xia in Chinese, originates from an ancient legend that speaks of a tiger who escaped from a hunter that was passing through the area by jumping from one side of the narrowest part of the ravine to the other. The route takes the visitor along the base of the Haba Shan mountain, offering spectacular views of this together with the Jade Dragon mountain opposite.
+          </div>
+          <div class="cardtext description" id="dali_description" style="display:none;">
+          Dali is situated 400 km west of the city of Kunming. The community is located in an outstanding natural setting, between the majestic mountains of Cangshan with an average height of 4000m, and lake Erhai. Dali is mainly populated by the Bai minority who established themselves here beside the lake 3,000 years ago. This small and attractive city is found within walls which date back to the Ming Dynasty, and the city mostly preserves the traditional Bai architecture. It is a city that is rich in history, since for many centuries it was the most important city in the Yunnan province and capital of the Nanzhao kingdom which, over the course of 247 years, was ruled by a succession of 13 kings. The city, that was also a Muslim kingdom in the 19th century, is today one of most inspiring tourist destinations in South West China.
+          </div>
+          <div class="cardtext description" id="shaxi_description" style="display:none;">
+          Located in the southeastern part of the Jianchuan district, Shaxi was an important trading centre on the Southern Silk Route during the Qing and Han dynasties. At the time of the Tang Dynasty, the town of Shaxi was already an important communications centre between the Chinese province of Sichuan, Yunnan and Tibet. It was in Shaxi that tea, brown sugar, cloth from Yunnan and Sichuan, leather, and other products from the Tibetan region were bought and sold. Although this route is no longer used, the Shaxi community have preserved the cobbled streets and traditional houses just as they were a thousand years ago, and the different minorities that live in the surrounding mountain villages can be seen at the Sideng market that takes place every Friday in Shaxi.
+          </div>
+          <div class="card" id="lijiang" style="background-image: url(<%= image_path 'lijiang-card.jpg' %>);">
+            LIJIANG
+          </div>
+          <div class="card" id="shangrila" style="background-image: url(<%= image_path 'shangrila-card.jpg' %>);">
+            SHANGRILA
+          </div>
+          <div class="card" id="shilin" style="background-image: url(<%= image_path 'netshilin-card.jpg' %>);">
+            SHILIN
+          </div>
+          <div class="cardtext description" id="lijiang_description" style="display:none;">
+          Situated 600km west of Kunming, the ancient city of Lijiang has preserved intact the entirety of the old town, formed by narrow stony streets, hundred-year-old traditional houses and small canals with pure icy water from the Jade Dragon Mountain (5550m) that, with its permanently snowy peak, serves as a symbol of the Naxi minority who live in Lijiang. The Naxi minority are descended from the Tibetan nomads and are followers of the Dongba religion, which is a shamanic-animist religion. Lijiang was declared a World Heritage Site by UNESCO in 1999.
+          </div>
+          <div class="cardtext description" id="shangrila_description" style="display:none;">
+          Capital of the Tibetan Autonomous Prefecture of Deqin. The community is found in a valley surrounded by mountains, 3,200m above sea level. This place marks the beginning of the Tibetan world, in fact, though Zhongdian is the Chinese name for the city its inhabitants, who are mostly Tibetan, call it Gyelthang. It also coincides with the name of Shangri-La, a land where peace and serenity reign, according to the James Hilton novel “Lost Horizon”. The inhabitants of this region are of the (Tibetan) Zang minority, and their way of life is characteristic of the high Tibetan plateaus. They follow the Tantric Buddhist religion and work in agriculture, herding yaks. The Songzanglin Monastery is also found in Zhongdian. Founded 300 years ago, this Tibetan monastery is the most important in South East China and is home to more than 600 monks. It is a wonderful example of how the Tibetan architecture is in harmony with its surroundings, and for those who haven’t visited Tibet, it is a marvellous introduction to the Tibetan Buddhist way of life. A few hours away from Zhongdian is the Mei Li or Kawakarpo Mountain. Located on the border between the Yunnan province and Tibet, it has three peaks which are over 6000m high, the largest, Kawagebo Peak, stands at an altitude of 6740m. It remains a “virgin peak” as until now nobody has managed to reach its peak. This mountain is one of the sacred mountains of Tibetan Buddhism and each year, at the start of the summer, thousands of devoted pilgrims arrive from Tibet and the Chinese provinces of Qinghai, Sichuan and Gansu. Halfway up the mountain, at an altitude of 2600m, is the Mingyong Glacier which is 4km in length and between 30 to 80m wide. From afar the glacier resembles an enormous white serpent against the greenery of the mountain.
+          </div>
+          <div class="cardtext description" id="shilin_description" style="display:none;">
+          Recently included in UNESCO’s list of World Heritage Sites, Shilin is situated 90km away from Kunming. Shilin or the “Stone Forest” is one of the most spectacular examples of karst formations and is considered to be an extraordinary natural phenomenon and a global geological reference.
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  function showParagraph(e) {
+    console.log(e);
+    console.log(e.toElement.id);
+    // hides the description of the card previously shown
+    const descOther = document.querySelectorAll(".description");
+    console.log(descOther);
+    descOther.forEach(d => d.style.display = "none");
+    // displays description text of card clicked
+    const description = document.getElementById(`${e.toElement.id}_description`);
+  if(description.style.display === "none") {
+    description.style.display = "block"
+  } else {
+    description.style.display = "none";
+  }
+}
+
+const card = document.querySelectorAll('.card');
+card.forEach(c => c.addEventListener('click', showParagraph));
+
+</script>

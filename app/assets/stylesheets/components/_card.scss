@@ -48,9 +48,14 @@
   width: 260px;
   border: none;
   border-radius: 3px;
+  padding: 0 20px;
   background-size: cover;
   background-position: center;
   color: rgba(255,255,255,0);
+  font-size: 24px;
+  font-style: "Alegreya Sans";
+  font-weight: bold;
+  text-align: center;
 }
 
 .card:hover {

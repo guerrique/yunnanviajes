@@ -1,1 +1,139 @@
-si si por favor
+<div class="wrapper">
+  <div class="banner">
+      <h3>YUNNAN VIAJES</h3>
+  </div>
+
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%= link_to "HOME", root_path, class: "nav-link" %>
+          <!-- <a class="nav-link" href="#">HOME</a> -->
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#">YUNNAN</a> -->
+          <%= link_to "YUNNAN", yunnan_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "OUR TOURS", our_tours_path, class: "nav-link" %>
+          <!-- <a class="nav-link" href="#">OUR TOURS</a> -->
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">ABOUT US</a>
+          <%#= link_to "ABOUT US", about_path, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="pagetitle">
+    <h2>ABOUT US</h2>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="imgcenter">
+        <%= image_tag 'quienes1.jpg', class: "img-fluid", style: "margin-bottom: 80px;" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="pagecontent">
+          <p>Yunnan Viajes in collaboration with the tour operator Yunnan Panda International offers you an unforgettable journey through the province of Yunnan.
+          </p>
+          <p>
+           All this is in the hands of the Yunnan Viajes team : Edith, a Catalan from Barcelona who lives in the region ; Ding Bo born in Kunming, Yunnan’s capital ; and Yunnan Panda International, a local tour operator with more than 15 years of experience in the tourism industry.
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="imgcenter">
+        <%= image_tag 'edith.jpg', class: "img-fluid", style: "margin: 80px 0;" %>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="pagecontent">
+          Edith has lived in Kunming, the capital of Yunnan since 2003. She has been working closely with Yunnan Panda International since 2009 bringing a “Western mentality” to the organisation of excursions. She personally designs itineraries, supervises all aspects of the excursions and when possible she accompanies the groups on tours. Her favourite part of this work is introducing travellers to this treasure, the Yunnan, a place that has stolen a piece of her soul. Edith speaks perfect Chinese, as well as English and French.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="imgcenter">
+        <%= image_tag 'dingbo.jpg', class: "img-fluid", style: "margin: 80px 0;" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="pagecontent">
+          <p>Ding Bo was born in Yunnan from a Han mother and a Hui father. This interesting mix made him a very nice and open minded person. With more than 8 years experience in the Spanish tourism market, he is in charge of operations. He loves his province and its culture and enjoys sharing it with all our Spanish clients and friends.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="pagecontent">
+          <p>To the north, the former Nanzhao kingdom's royal seat of Dali, resting by the vast Erhai Lake, is preserved proudly by its Bai minority inhabitants.</p>
+
+          <p>The route north passes through the little known Tea Route town of Sideng in the pretty Shaxi valley and on to the splendid Unesco World heritage town of Lijiang.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <%#= image_tag 'neterhai.jpg', class: "img-fluid", style: "margin: 80px 0;" %>
+      </div>
+    </div>
+  </div>
+ <!--  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="pagecontent">
+          <p>Further north still, the sandy-coloured waters of the Yangtze River pound through the dramatic Tiger Leaping Gorge. The river and road split around a mountain chain
+          on their northward progress to the brightly lit Tibetan plains around Zhong Dian (also known as Shangri-La), where Buddhist monks still sound deep mournful bass horns
+          within the sanctuary of the second greatest Tibetan Buddhist lamasery after that of Lhasa, Sonzanlin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <%#= image_tag 'nettigerleaping.jpg', class: "img-fluid", style: "margin: 80px 0;" %>
+      </div>
+    </div>
+  </div> -->
+<!--   <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="pagecontent">
+          <p>To the newcomer in China, Yunnan presents an unexpectedly rich spectacle of cultural diversity and colour.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>

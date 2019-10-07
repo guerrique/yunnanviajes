@@ -14,14 +14,16 @@
           <!-- <a class="nav-link" href="#">HOME</a> -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">YUNNAN</a>
+          <!-- <a class="nav-link" href="#">YUNNAN</a> -->
+          <%= link_to "YUNNAN", yunnan_path, class: "nav-link" %>
         </li>
         <li class="nav-item active">
-          <%= link_to "OUR TOURS", our_tours_path, class: "nav-link" %>
-          <!-- <a class="nav-link" href="#">OUR TOURS</a> -->
+          <%#= link_to "OUR TOURS", our_tours_path, class: "nav-link" %>
+          <a class="nav-link" href="#">OUR TOURS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT US</a>
+          <!-- <a class="nav-link" href="#">ABOUT US</a> -->
+          <%= link_to "ABOUT US", about_path, class: "nav-link" %>
         </li>
       </ul>
     </div>

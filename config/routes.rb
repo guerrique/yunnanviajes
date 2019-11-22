@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'yunnan', to: 'pages#yunnan', as: :yunnan
   get 'our_tours', to: 'pages#our_tours', as: :our_tours
   get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
 end
 

@@ -1,0 +1,15 @@
+.footstyle {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.4);
+  }
+  p {
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+  }
+}

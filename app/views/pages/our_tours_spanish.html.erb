@@ -1,0 +1,207 @@
+<div class="wrapper">
+  <div class="banner">
+    <h3>YUNNAN VIAJES</h3>
+  </div>
+
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%= link_to "HOME", home_path, class: "nav-link" %>
+          <!-- <a class="nav-link" href="#">HOME</a> -->
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#">YUNNAN</a> -->
+          <%= link_to "YUNNAN", yunnan_spanish_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%#= link_to "OUR TOURS", our_tours_path, class: "nav-link" %>
+          <a class="nav-link" href="#">NUESTROS TOURS</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#">ABOUT US</a> -->
+          <%= link_to "QUIENES SOMOS", quien_somos_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#">ABOUT US</a> -->
+          <%= link_to "CONTACTO", contacto_path, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="pagetitle">
+    <h2>NUESTROS TOURS</h2>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="pagecontent">
+          <p>Nuestros tours son exclusivos, fruto de más de 10 años de experiencia en Yunnan.</br> Están hechos a medida para satisfacer los deseos de grupos o individuos.</p>
+          <p>Estos son solo algunos ejemplos de lo que puede experimentar en Yunnan :
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        <div class="cards">
+          <div class="card" id="weishan" style="background-image: url(<%= image_path 'weishan-card.jpg' %>);">
+            WEISHAN
+          </div>
+          <div class="card" id="yuanyang" style="background-image: url(<%= image_path 'yuanyang-card.jpg' %>);">
+            YUANYANG
+          </div>
+          <div class="card" id="jianshui" style="background-image: url(<%= image_path 'jianshui-card.jpg' %>);">
+            JIANSHUI
+          </div>
+          <div class="cardtext description destination" id="weishan_description" style="display:none;">
+            <h3>WEISHAN</h3>
+            <p>
+            La montaña de Weibaoshan está considerada como una de las catorce montañas taoistas más importantes del país.
+            La ciudad antigua de Weishan, hogar de las minorías étnicas Yi y Hui, fue construida hace más de 600 años durante la Dinastía Ming.
+            </p>
+            <%= image_tag('weishan2.JPG', style: 'width: 200px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px') %>
+          </div>
+          <div class="cardtext description destination" id="yuanyang_description" style="display: none;">
+            <h3>YUANYANG</h3>
+            <p>
+            En esta pequeña población hogar de las minorías Yi y Hani, se encuentran las terrazas de arroz más bellas y espectaculares del mundo.
+            </p>
+            <p>Durante el invierno y la primavera, las terrazas se transforman en verdaderos espejos que sorprenden al viajero por su hermosura. Durante esta época miles de fotógrafos de todo el mundo se desplazan hasta Yuanyang para captar con sus cámaras la belleza de este lugar.
+            </p>
+            <%= image_tag('yuanyang2.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px') %>
+          </div>
+          <div class="cardtext description destination" id="jianshui_description" style="display:none;">
+            <h3>JIANSHUI</h3>
+            <p>
+            Desde esta antigua ciudad situada sobre la ruta de la Seda, se controlaba a los pasajeros que se dirigían hacia Vietnam, de aquí que se convirtiera en el S.XIII en un centro político y militar muy activo.
+            </p>
+            <p>
+            Hoy, esta pequeña ciudad es como un verdadero museo de arquitectura antigua, con su barrio musulmán, sus casas tradicionales y su mezquita, sus diversos monasterios budistas y un magnífico templo de Confucio (“Wenmiao”, templo de la literatura), el segundo templo más grande de China, construido durante la época mongola (1285).
+            </p>
+            <p>
+            Además, la casa de la familia Zhu construida a finales de la dinastía Qing, es una excelente ilustración de la casa tradicional china con patios y jardines interiores, quioscos y galerías cubiertas.
+            </p>
+          </div>
+          <div class="card" id="tigerleapinggorge" style="background-image: url(<%= image_path 'nettigerleaping-card.jpg' %>);">
+            GARGANTA DEL SALTO DEL TIGRE
+          </div>
+          <div class="card" id="dali" style="background-image: url(<%= image_path 'netdali-card.jpg' %>);">
+            DALI
+          </div>
+          <div class="card" id="shaxi" style="background-image: url(<%= image_path 'netshaxi-card.jpg' %>);">
+            SHAXI
+          </div>
+          <div class="cardtext description destination" id="tigerleapinggorge_description" style="display:none;">
+            <h3>GARGANTA DEL SALTO DEL TIGRE</h3>
+            <p>
+            Cerca de Lijiang, a unos 60 km, las aguas del río Yangtze han creado una de las gargantas más profundas del mundo. Se extiende a lo largo de 15 kilómetros, y en algunos puntos sus paredes miden 3900 metros de altura. Una de las excursiones más bonitas que se pueden realizar en Yunnan es el trekking de esta garganta.
+            </p>
+            <p>A lo largo del trayecto se encuentran varias aldeas de la minoría Naxi en las que encontrar alojamiento o comida.
+            </p>
+          <%= image_tag('tiger.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+            <p>El nombre de la garganta, Hutiao Xia en chino, proviede una antigua leyenda que cuenta cómo un tigre escapó de un cazador que pasaba por la zona saltando de un extremo a otro del desfiladero en su zona más estrecha.
+            </p>
+            <p>El camino recorre la base del monte Haba Shan, ofreciendo unas vistas espectaculares de éste, y también de la montaña que se encuentra en el otro lado, la del Dragón de Jade.
+            </p>
+          </div>
+          <div class="cardtext description destination" id="dali_description" style="display:none;">
+            <h3>DALI</h3>
+            <p>
+            Situada a unos 400 km al oeste de la ciudad de Kunming. Esta población está ubicada en un marco natural incomparable, entre las majestuosas montañas de Cangshan con una altura media de 4000m y el lago Erhai, Dali esta principalmente poblado por la minoría Bai que se instaló a orillas del lago hace unos 3.000 años.
+            </p>
+            <%= image_tag('dali2.JPG', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+            <p>Esta pequeña y atractiva ciudad se encuentra dentro de murallas que datan de la dinastía Ming y en su mayor parte, la ciudad conserva la arquitectura tradicional de los Bai. La ciudad es rica en historia, durante muchos siglos fue la ciudad principal de Yunnan, capital del reino de Nanzhao, que durante 247 años vió pasar a 13 reyes.
+            </p>
+            <p>
+            La ciudad, que también fue un reino musulmán en el s. XIX, es hoy uno de los destinos turísticos con más solera en el Sudeste de China.
+            </p>
+            <%= image_tag('dali.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px') %>
+          </div>
+          <div class="cardtext description destination" id="shaxi_description" style="display:none;">
+            <h3>SHAXI</h3>
+            <p>
+            Situada al sureste del distrito de Jianchuan, fue un importante pueblo commercial en la Ruta de la Seda del Sur durante las Dinastías Qing y Han.
+            </p>
+            <p>Desde los tiempos de la Dinastía Tang, el pueblo de Shaxi ya era un importante centro de comunicaciones entre la provincia china de Sichuan, Yunnan y el Tíbet. En este lugar se realizaban las transacciones de té, azúcar moreno, telas de Yunnan y Sichuan, pieles y otros productos de la region del Tíbet.
+            </p>
+            <%= image_tag('shaxi.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+            <p>A pesar de que esta ruta ya no sigue funcionando, la población de Shaxi aún conserva sus calles empedradas y sus casas tradicionales tal y como estaban hace mil años y las diferentes minorías que habitan en los pueblos de las montañas de alrededor participan en el Mercado de Sideng que tiene lugar cada viernes en Shaxi.
+            </p>
+          </div>
+          <div class="card" id="lijiang" style="background-image: url(<%= image_path 'lijiang-card.jpg' %>);">
+            LIJIANG
+          </div>
+          <div class="card" id="shangrila" style="background-image: url(<%= image_path 'shangrila-card.jpg' %>);">
+            SHANGRI-LA
+          </div>
+          <div class="card" id="shilin" style="background-image: url(<%= image_path 'netshilin-card.jpg' %>);">
+            SHILIN
+          </div>
+          <div class="cardtext description destination" id="lijiang_description" style="display:none;">
+            <h3>LIJIANG</h3>
+          <p>
+          Situada a unos 600 Km al oeste de Kunming, la ciudad antigua de Lijiang conserva intacto y en su totalidad el casco antiguo, formado por pequeñas callejuelas empedradas, centenarias casas tradicionales y pequeños canales que recorren la ciudad con el agua pura y helada procedente de la Montaña del Dragón de Jade (5550m) que sirve, con su cima permanentemente cubierta de nieve, de símbolo de la minoría Naxi, los habitantes de Lijiang.
+          </p>
+          <%= image_tag('netlijiang.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+          <p>La minoría Naxi desciende de los nómadas tibetanos y son seguidores de la religión Dongba, religión chamánico-animista. Lijiang fue declarada en 1999 Patrimonio de la Humanidad por la UNESCO.
+          </p>
+          </div>
+          <div class="cardtext description destination" id="shangrila_description" style="display:none;">
+            <h3>SHANGRI-LA</h3>
+          <p>
+          Este lugar marca el inicio del mundo tibetano, de hecho, Zhongdian es el nombre chino de la ciudad, sus habitantes, en gran parte tibetanos, la llaman Gyelthang.
+          </p>
+          <p>Conocida también con el nombre de Shangri-La, tierra donde reina la paz y la serenidad, gracias a la novela de James Hilton “Lost Horizon”.
+          </p>
+          <%= image_tag('netshangrila.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+          <p>Los habitantes de esta región son de la minoría Zang (Tibetanos), su estilo de vida es propio de las altas mesetas tibetanas, su religión es el budismo tántrico y se dedican a la agricultura y al cuidado de los rebaños de yaks.
+          </p>
+          <p>Zhongdian también cuenta con el Monasterio Songzanglin. fundado hace 300 años, este monasterio tibetano es el más importante del Sudoeste de China y cuenta con más de 600 monjes. Es un maravilloso ejemplo de la armonía de la arquitectura tibetana con su entorno y para aquellos que no hayan visitado el Tíbet, es una espléndida introducción al estilo de vida del budismo tibetano.
+          </p>
+          <p>A unas pocas horas de Zhongdian se encuentra la Montaña de Mei Li o Kawakarpo. Situada en la frontera entre la Provincia de Yunnan y el Tíbet, cuenta con trece picos que superan los 6000m de altura, el más importante, el Pico Kawagebo con 6740m. Hasta ahora un “pico virgen” ya que nadie ha podido llegar a su cima.
+          </p>
+         <%= image_tag('shangrila2.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+          <p>Esta montaña es una de las montañas sagradas del budismo tibetano y cada año, a principios de invierno, llegan miles de peregrinos debotos procedentes del Tíbet y de las provincias chinas de Qinghai, Sichuan y Gansu.
+          </p>
+          <p>En el corazón de la montaña encontramos el Glaciar Mingyong de 2600m de altura tiene una longitud total de 4 km y una anchura de 30 a 80 metros. Desde lejos el glaciar parece una enorme serpiente blanca sobre el paisaje verde de la montaña.
+          </p>
+          </div>
+          <div class="cardtext description destination" id="shilin_description" style="display:none;">
+            <h3>SHILIN</h3>
+          <p>
+          Recientemente incluido en la lista de Patrimonio Mundial de la UNESCO, está situado a 90Km de Kunming. Shilin o “Bosque de Piedra” es uno de los ejemplos más espectaculares de paisaje kárstico y está considerado un fenómeno natural extraordinario y una referencia geológica mundial.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function showParagraph(e) {
+    console.log(e);
+    console.log(e.toElement.id);
+    // hides the description of the card previously shown
+    const descOther = document.querySelectorAll(".description");
+    console.log(descOther);
+    descOther.forEach(d => d.style.display = "none");
+    // displays description text of card clicked
+    const description = document.getElementById(`${e.toElement.id}_description`);
+  if(description.style.display === "none") {
+    description.style.display = "block"
+  } else {
+    description.style.display = "none";
+  }
+}
+
+const card = document.querySelectorAll('.card');
+card.forEach(c => c.addEventListener('click', showParagraph));
+
+</script>

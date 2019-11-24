@@ -1,10 +1,10 @@
 <div class="wrapper homepage" style="background-image: linear-gradient(rgba(245,245,245,0.3),rgba(245,245,245,0.3)), url(<%= image_path 'homepage.jpg'%>);">
   <div class="spanish">
-    <%= link_to "spanish version", home_path %>
+    <%= link_to "english version", root_path %>
   </div>
   <div class="homepagetitle">
     <h2>YUNNAN VIAJES</h2>
-    <p>Your guide to China's land of eternal spring</p>
+    <p>Su guía a la tierra china de la eterna primavera</p>
   </div>
 </div>
 <!-- </div> -->
@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col-12 col-lg-4">
       <div class="outerbox">
-        <%= link_to yunnan_path do %>
+        <%= link_to yunnan_spanish_path do %>
         <div class="card-menu" style="background-image:
         linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'yunnan.jpg' %>);">
         YUNNAN
@@ -22,20 +22,20 @@
   </div>
   <div class="col-12 col-lg-4">
     <div class="outerbox">
-      <%= link_to our_tours_path do %>
+      <%= link_to our_tours_spanish_path do %>
       <div class="card-menu" style="background-image:
       linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'tours.jpg' %>);">
-      OUR TOURS
+      NUESTROS TOURS
     </div>
     <% end %>
   </div>
 </div>
 <div class="col-12 col-lg-4">
   <div class="outerbox">
-    <%= link_to about_path do %>
+    <%= link_to quien_somos_path do %>
     <div class="card-menu" style="background-image:
     linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'about.jpg' %>);">
-    ABOUT US
+    QIENES SOMOS
   </div>
   <% end %>
 </div>

@@ -10,7 +10,15 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%= yield %>
+    <% if current_page?(root_path) %>
+      <%= yield %>
+    <% else %>
+      <div class="banner">
+        <h3>YUNNAN VIAJES</h3>
+      </div>
+      <%= render 'shared/navbar' %>
+      <%= yield %>
+    <% end %>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

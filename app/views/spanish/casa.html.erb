@@ -1,6 +1,7 @@
 <div class="wrapper homepage" style="background-image: linear-gradient(rgba(245,245,245,0.3),rgba(245,245,245,0.3)), url(<%= image_path 'homepage.jpg'%>);">
   <div class="spanish">
-    <%= link_to "english version", root_path %>
+    <%= link_to "english", home_en_path %>
+    <%= link_to "french", accueil_path %>
   </div>
   <div class="homepagetitle">
     <h2>YUNNAN VIAJES</h2>
@@ -12,7 +13,7 @@
   <div class="row">
     <div class="col-12 col-lg-4">
       <div class="outerbox">
-        <%= link_to yunnan_spanish_path do %>
+        <%= link_to yunnan_es_path do %>
         <div class="card-menu" style="background-image:
         linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'yunnan.jpg' %>);">
         YUNNAN
@@ -22,7 +23,7 @@
   </div>
   <div class="col-12 col-lg-4">
     <div class="outerbox">
-      <%= link_to our_tours_spanish_path do %>
+      <%= link_to nuestro_tours_path do %>
       <div class="card-menu" style="background-image:
       linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'tours.jpg' %>);">
       NUESTROS TOURS
@@ -41,11 +42,4 @@
 </div>
 </div>
 </div>
-
-
-
-<!--     <div class="card-category"style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
-    url('<%#= cl_image_path castle.photo, height: 300, width: 400, crop: :fill %>')">
-    <div class="front-gimmick">
-     <h1><%#= link_to castle.name, castle_path(castle.id) %></h1></div>
-   </div> -->
+</div>

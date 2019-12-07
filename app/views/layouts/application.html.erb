@@ -10,17 +10,43 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if current_page?(root_path) %>
-      <%= yield %>
-    <% else %>
-      <div class="banner">
-        <h3>YUNNAN VIAJES</h3>
-      </div>
-      <%= render 'shared/navbar' %>
-      <%= yield %>
+    <% if controller_name == 'spanish' %>
+      <% if current_page?(root_path) %>
+        <%= yield %>
+      <% else %>
+        <div class="banner">
+          <h3>YUNNAN VIAJES</h3>
+        </div>
+        <%= render 'shared/navbar-es' %>
+        <%= yield %>
+      <% end %>
+      <%= render 'shared/footer-es' %>
+    <% elsif  controller_name == 'french'%>
+      <% if current_page?(accueil_path) %>
+        <%= yield %>
+      <% else %>
+        <div class="banner">
+          <h3>YUNNAN VIAJES</h3>
+        </div>
+        <%= render 'shared/navbar-fr' %>
+        <%= yield %>
+      <% end %>
+      <%= render 'shared/footer-fr' %>
+    <% elsif controller_name == 'pages' %>
+      <% if current_page?(home_en_path) %>
+        <%= yield %>
+      <% else %>
+        <div class="banner">
+          <h3>YUNNAN VIAJES</h3>
+        </div>
+        <%= render 'shared/navbar' %>
+        <%= yield %>
+      <% end %>
+      <%= render 'shared/footer' %>
     <% end %>
-    <%= render 'shared/footer' %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
+
+
+      <%= javascript_include_tag 'application' %>
+      <%= javascript_pack_tag 'application' %>
   </body>
 </html>

@@ -1,0 +1,14 @@
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <%= nav_bar do %>
+        <%= nav_link 'ACCUEIL', accueil_path, class: "nav-link" %>
+        <%= nav_link 'YUNNAN', yunnan_fr_path, class: "nav-link" %>
+        <%= nav_link 'NOS TOURS', circuits_path, class: "nav-link" %>
+        <%= nav_link 'À PROPOS', a_propos_path, class: "nav-link" %>
+        <%= nav_link 'CONTACT', contact_fr_path, class: "nav-link" %>
+      <% end %>
+    </div>
+  </div>

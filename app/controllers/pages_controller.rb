@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def home
+  def home_en
   end
 
   def yunnan

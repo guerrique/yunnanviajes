@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'accueil', to: 'french#accueil'
   get 'yunnan_fr', to: 'french#yunnan_fr'
   get 'circuits', to: 'french#circuits'
-  get 'a_propos', to: 'french#apropos'
+  get 'a_propos', to: 'french#a_propos'
   get 'contact_fr', to: 'french#contact_fr'
 end
 

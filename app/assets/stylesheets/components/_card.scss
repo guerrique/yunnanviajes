@@ -93,7 +93,75 @@
 }
 
 .card-weishan {
+  background-image: url('weishan-card.jpg');
+}
 
+.card-weishan:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('weishan-card.jpg');
+}
+
+.card-yuanyang {
+  background-image: url('yuanyang-card.jpg');
+}
+
+.card-yuanyang:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('yuanyang-card.jpg');
+}
+
+.card-jianshui {
+  background-image: url('jianshui-card.jpg');
+}
+
+.card-jianshui:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('jianshui-card.jpg');
+}
+
+.card-tiger {
+  background-image: url('nettigerleaping-card.jpg');
+}
+
+.card-tiger:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('nettigerleaping-card.jpg');
+}
+
+.card-dali {
+  background-image: url('netdali-card.jpg');
+}
+
+.card-dali:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('netdali-card.jpg');
+}
+
+.card-shaxi {
+  background-image: url('netshaxi-card.jpg');
+}
+
+.card-shaxi:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('netshaxi-card.jpg');
+}
+
+.card-lijiang {
+  background-image: url('lijiang-card.jpg');
+}
+
+.card-lijiang:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('lijiang-card.jpg');
+}
+
+.card-shangrila {
+  background-image: url('shangrila-card.jpg');
+}
+
+.card-shangrila:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('shangrila-card.jpg');
+}
+
+.card-shilin {
+  background-image: url('netshilin-card.jpg');
+}
+
+.card-shilin:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('netshilin-card.jpg');
 }
 
 .cardtext {

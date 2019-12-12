@@ -1,7 +1,7 @@
 <div class="wrapper homepage" style="background-image: linear-gradient(rgba(245,245,245,0.3),rgba(245,245,245,0.3)), url(<%= image_path 'homepage.jpg'%>);">
   <div class="spanish">
-    <%= link_to "spanish version", root_path %>
-    <%= link_to "french", accueil_path %>
+    <%= link_to "ESPAÑOL", root_path %> /
+    <%= link_to "ENGLISH", home_en_path %>
   </div>
   <div class="homepagetitle">
     <h2>YUNNAN VIAJES</h2>
@@ -14,8 +14,7 @@
     <div class="col-12 col-lg-4">
       <div class="outerbox">
         <%= link_to yunnan_fr_path do %>
-        <div class="card-menu" style="background-image:
-        linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'yunnan.jpg' %>);">
+        <div class="card-menu card-yunnan">
         LE YUNNAN
       </div>
       <% end %>
@@ -24,8 +23,7 @@
   <div class="col-12 col-lg-4">
     <div class="outerbox">
       <%= link_to circuits_path do %>
-      <div class="card-menu" style="background-image:
-      linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'tours.jpg' %>);">
+      <div class="card-menu card-tours">
       NOS TOURS
     </div>
     <% end %>
@@ -34,8 +32,7 @@
 <div class="col-12 col-lg-4">
   <div class="outerbox">
     <%= link_to a_propos_path do %>
-      <div class="card-menu" style="background-image:
-      linear-gradient(rgba(245,245,245,0.35),rgba(245,245,245,0.35)), url(<%= image_path 'about.jpg' %>);">
+      <div class="card-menu card-about">
       À PROPOS
       </div>
     <% end %>

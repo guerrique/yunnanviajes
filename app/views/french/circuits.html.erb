@@ -162,14 +162,14 @@
     descOther.forEach(d => d.style.display = "none");
     // displays description text of card clicked
     const description = document.getElementById(`${e.toElement.id}_description`);
-  if(description.style.display === "none") {
-    description.style.display = "block"
-  } else {
-    description.style.display = "none";
+    if(description.style.display === "none") {
+      description.style.display = "block"
+    } else {
+      description.style.display = "none";
+    }
   }
-}
 
-const card = document.querySelectorAll('.card');
-card.forEach(c => c.addEventListener('click', showParagraph));
+  const card = document.querySelectorAll('.card');
+  card.forEach(c => c.addEventListener('click', event => showParagraph(event)));
 
 </script>

@@ -18,7 +18,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-9">
         <div class="cards">
-          <div class="card card-weishan" id="weishan">
+          <div class="card card-weishan" id="weishan" data-location="weishan">
             WEISHAN
           </div>
           <div class="card card-yuanyang" id="yuanyang">
@@ -27,7 +27,7 @@
           <div class="card card-jianshui" id="jianshui">
             JIANSHUI
           </div>
-          <div class="cardtext description destination" id="weishan_description" style="display:none;">
+          <div class="cardtext description destination" id="weishan_description" style="display:none;" data-location="weishan">
             <h3>WEISHAN</h3>
             <p>
             La montagne Weibaoshan serait l'une des quatorze montagnes taoïstes les plus importantes du pays.
@@ -154,19 +154,22 @@
 
 <script type="text/javascript">
   function showParagraph(e) {
+
+    // location = e.currentTarget.dataset.location
+    // targetElement = document.querySelector(`.cardtext[data-location='${location}']`);
+
     console.log(e.currentTarget);
     console.log(e.currentTarget.id);
-    console.log(e.currentTarget.id);
-    // hides the description of the card previously shown
-    const descOther = document.querySelectorAll(".description");
-    // console.log(descOther);
-    descOther.forEach(d => d.style.display = "none");
     // displays description text of card clicked
 
     console.log(`${e.id}_description`);
 
     const description = document.getElementById(`${e.currentTarget.id}_description`);
     if(description.style.display === "none") {
+      // hides the description of the card previously shown
+      const descOther = document.querySelectorAll(".description");
+      // console.log(descOther);
+      descOther.forEach(d => d.style.display = "none");
       description.style.display = "block"
     } else {
       description.style.display = "none";

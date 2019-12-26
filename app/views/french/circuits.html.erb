@@ -154,14 +154,18 @@
 
 <script type="text/javascript">
   function showParagraph(e) {
-    console.log(e);
-    console.log(e.toElement.id);
+    console.log(e.currentTarget);
+    console.log(e.currentTarget.id);
+    console.log(e.currentTarget.id);
     // hides the description of the card previously shown
     const descOther = document.querySelectorAll(".description");
-    console.log(descOther);
+    // console.log(descOther);
     descOther.forEach(d => d.style.display = "none");
     // displays description text of card clicked
-    const description = document.getElementById(`${e.toElement.id}_description`);
+
+    console.log(`${e.id}_description`);
+
+    const description = document.getElementById(`${e.currentTarget.id}_description`);
     if(description.style.display === "none") {
       description.style.display = "block"
     } else {

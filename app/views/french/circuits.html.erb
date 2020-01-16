@@ -170,7 +170,8 @@
       const descOther = document.querySelectorAll(".description");
       // console.log(descOther);
       descOther.forEach(d => d.style.display = "none");
-      description.style.display = "block"
+      description.style.display = "block";
+      description.scrollIntoView();
     } else {
       description.style.display = "none";
     }

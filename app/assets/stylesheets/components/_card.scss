@@ -92,6 +92,14 @@
   color: rgba(255,255,255,1);
 }
 
+.card-kunming {
+  background-image: url('kunming-card.jpg');
+}
+
+.card-kunming:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('kunming-card.jpg');
+}
+
 .card-weishan {
   background-image: url('weishan-card.jpg');
 }
@@ -114,6 +122,14 @@
 
 .card-jianshui:hover {
   background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('jianshui-card.jpg');
+}
+
+.card-jinping {
+  background-image: url('jinping-card.jpg');
+}
+
+.card-jinping:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('jinping-card.jpg');
 }
 
 .card-tiger {
@@ -146,6 +162,22 @@
 
 .card-lijiang:hover {
   background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('lijiang-card.jpg');
+}
+
+.card-wumu {
+  background-image: url('wumu-card.jpg');
+}
+
+.card-wumu:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('wumu-card.jpg');
+}
+
+.card-meili {
+  background-image: url('meili-card.jpg');
+}
+
+.card-meili:hover {
+  background-image: linear-gradient(rgba(90,90,90,0.7),rgba(90,90,90,0.7)), url('meili-card.jpg');
 }
 
 .card-shangrila {

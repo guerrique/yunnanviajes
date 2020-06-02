@@ -17,8 +17,8 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-9">
         <div class="cards">
-          <div class="card card-weishan" id="weishan">
-            WEISHAN
+          <div class="card card-kunming" id="kunming">
+            KUNMING
           </div>
           <div class="card card-yuanyang" id="yuanyang">
             YUANYANG
@@ -26,13 +26,18 @@
           <div class="card card-jianshui" id="jianshui">
             JIANSHUI
           </div>
-          <div class="cardtext description destination" id="weishan_description" style="display:none;">
-            <h3>WEISHAN</h3>
+          <div class="cardtext description destination" id="kunming_description" style="display:none;">
+            <h3>KUNMING</h3>
             <p>
-            La montaña de Weibaoshan está considerada como una de las catorce montañas taoistas más importantes del país.
-            La ciudad antigua de Weishan, hogar de las minorías étnicas Yi y Hui, fue construida hace más de 600 años durante la Dinastía Ming.
+            La ciudad de Kunming es conocida en China como “La ciudad de la Eterna Primavera”. Su situación, en latitud subtropical y a una altura de 1800m sobre el nivel del mar, permite al viajero disfrutar de un clima templado durante todo el año.
             </p>
-            <%= image_tag('weishan2.JPG', style: 'width: 200px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px') %>
+            <p>
+            Está rodeada por montañas norte, este y oeste por el lago Dian al sur. Su atracciones principales son el Templo de Yuantong, el templo budista más grande de la ciudad y un importante centro de peregrinación, con más de mil años de antigüedad y el Parque del Lago Verde o Cuihu, sin duda el rincón más encantador de Kunming. Un gran parque con un lago en el centro, donde la gente va a pasear, bailar y a tocar música con sus instrumentos tradicionales. También suele haber señoras practicando bailes regionales o Tai-chi y, como en todos los parques o plazas de China, gente volando sus cometas.
+            </p>
+            <p>
+            Alrededor encontramos una serie de casas de té con terrazas con vistas al parque donde se puede degustar el famoso té de Yunnan, Pu’er. Un lugar ideal para relajarse.
+            </p>
+            <%= image_tag('netkunming2.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px') %>
           </div>
           <div class="cardtext description destination" id="yuanyang_description" style="display: none;">
             <h3>YUANYANG</h3>
@@ -55,8 +60,8 @@
             Además, la casa de la familia Zhu construida a finales de la dinastía Qing, es una excelente ilustración de la casa tradicional china con patios y jardines interiores, quioscos y galerías cubiertas.
             </p>
           </div>
-          <div class="card card-tiger" id="tigerleapinggorge">
-            GARGANTA DEL SALTO DEL TIGRE
+          <div class="card card-jinping" id="jinping">
+            MERCADOS LONGMEN JINPING
           </div>
           <div class="card card-dali" id="dali">
             DALI
@@ -64,20 +69,14 @@
           <div class="card card-shaxi" id="shaxi">
             SHAXI
           </div>
-          <div class="cardtext description destination" id="tigerleapinggorge_description" style="display:none;">
-            <h3>GARGANTA DEL SALTO DEL TIGRE</h3>
+          <div class="cardtext description destination" id="jinping_description" style="display:none;">
+            <h3>MERCADOS LONGMEN, JINPING</h3>
             <p>
-            Cerca de Lijiang, a unos 60 km, las aguas del río Yangtze han creado una de las gargantas más profundas del mundo. Se extiende a lo largo de 15 kilómetros, y en algunos puntos sus paredes miden 3900 metros de altura. Una de las excursiones más bonitas que se pueden realizar en Yunnan es el trekking de esta garganta.
+            Los mercados al aire libre que tienen lugar todos los días de la semana sobretodo en la zona de las terrazas de arroz de Yuanyang aportan una explosión de color y vida a sus poblaciones como por ejemplo Jinping, Longmen, Niuzhaojai, etc. reúnen una gran variedad de etnias: Yao, Hong Yao, Yi, Hani, Dai, Miao, etc y encontramos una gran abundancia de frutas, verduras y productos locales.
             </p>
-            <p>A lo largo del trayecto se encuentran varias aldeas de la minoría Naxi en las que encontrar alojamiento o comida.
-            </p>
-          <%= image_tag('tiger.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
-            <p>El nombre de la garganta, Hutiao Xia en chino, proviede una antigua leyenda que cuenta cómo un tigre escapó de un cazador que pasaba por la zona saltando de un extremo a otro del desfiladero en su zona más estrecha.
-            </p>
-            <p>El camino recorre la base del monte Haba Shan, ofreciendo unas vistas espectaculares de éste, y también de la montaña que se encuentra en el otro lado, la del Dragón de Jade.
-            </p>
+            <%#= image_tag('weishan2.JPG', style: 'width: 200px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px') %>
           </div>
-          <div class="cardtext description destination" id="dali_description" style="display:none;">
+         <div class="cardtext description destination" id="dali_description" style="display:none;">
             <h3>DALI</h3>
             <p>
             Situada a unos 400 km al oeste de la ciudad de Kunming. Esta población está ubicada en un marco natural incomparable, entre las majestuosas montañas de Cangshan con una altura media de 4000m y el lago Erhai, Dali esta principalmente poblado por la minoría Bai que se instaló a orillas del lago hace unos 3.000 años.
@@ -101,8 +100,49 @@
             <p>A pesar de que esta ruta ya no sigue funcionando, la población de Shaxi aún conserva sus calles empedradas y sus casas tradicionales tal y como estaban hace mil años y las diferentes minorías que habitan en los pueblos de las montañas de alrededor participan en el Mercado de Sideng que tiene lugar cada viernes en Shaxi.
             </p>
           </div>
+          <div class="card card-tiger" id="tigerleapinggorge">
+            GARGANTA DEL SALTO DEL TIGRE
+          </div>
           <div class="card card-lijiang" id="lijiang">
             LIJIANG
+          </div>
+          <div class="card card-wumu" id="wumu">
+            WUMU
+          </div>
+          <div class="cardtext description destination" id="tigerleapinggorge_description" style="display:none;">
+            <h3>GARGANTA DEL SALTO DEL TIGRE</h3>
+            <p>
+            Cerca de Lijiang, a unos 60 km, las aguas del río Yangtze han creado una de las gargantas más profundas del mundo. Se extiende a lo largo de 15 kilómetros, y en algunos puntos sus paredes miden 3900 metros de altura. Una de las excursiones más bonitas que se pueden realizar en Yunnan es el trekking de esta garganta.
+            </p>
+            <p>A lo largo del trayecto se encuentran varias aldeas de la minoría Naxi en las que encontrar alojamiento o comida.
+            </p>
+          <%= image_tag('tiger.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+            <p>El nombre de la garganta, Hutiao Xia en chino, proviede una antigua leyenda que cuenta cómo un tigre escapó de un cazador que pasaba por la zona saltando de un extremo a otro del desfiladero en su zona más estrecha.
+            </p>
+            <p>El camino recorre la base del monte Haba Shan, ofreciendo unas vistas espectaculares de éste, y también de la montaña que se encuentra en el otro lado, la del Dragón de Jade.
+            </p>
+          </div>
+           <div class="cardtext description destination" id="lijiang_description" style="display:none;">
+            <h3>LIJIANG</h3>
+          <p>
+          Situada a unos 600 Km al oeste de Kunming, la ciudad antigua de Lijiang conserva intacto y en su totalidad el casco antiguo, formado por pequeñas callejuelas empedradas, centenarias casas tradicionales y pequeños canales que recorren la ciudad con el agua pura y helada procedente de la Montaña del Dragón de Jade (5550m) que sirve, con su cima permanentemente cubierta de nieve, de símbolo de la minoría Naxi, los habitantes de Lijiang.
+          </p>
+          <%= image_tag('netlijiang.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+          <p>La minoría Naxi desciende de los nómadas tibetanos y son seguidores de la religión Dongba, religión chamánico-animista. Lijiang fue declarada en 1999 Patrimonio de la Humanidad por la UNESCO.
+          </p>
+          </div>
+          <div class="cardtext description destination" id="wumu_description" style="display:none;">
+            <h3>WUMU</h3>
+            <p>
+            Wumu es una población muy antigua y tradicional habitada por la etnia Naxi y con un enclave inmejorable, con vistas al río Yangtzé y su valle y rodeada de montañas.
+            </p>
+            <p>
+            Alejada del turismo, aquí sólo se escucha el sonido de la naturaleza, durante las noches claras se disfruta de sus cielos estrellados. Los habitantes de Wumu aún viven como hace siglos, sus tradiciones se han conservado intactas hasta nuestros días
+            </p>
+            <%= image_tag('netwumu2.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+          </div>
+          <div class="card card-meili" id="meili">
+            MONTANA NEVADA DE MEILI
           </div>
           <div class="card card-shangrila" id="shangrila">
             SHANGRI-LA
@@ -110,13 +150,20 @@
           <div class="card card-shilin" id="shilin">
             SHILIN
           </div>
-          <div class="cardtext description destination" id="lijiang_description" style="display:none;">
-            <h3>LIJIANG</h3>
+          <div class="cardtext description destination" id="meili_description" style="display:none;">
+            <h3>MONTANA NEVADA DE MEILI</h3>
           <p>
-          Situada a unos 600 Km al oeste de Kunming, la ciudad antigua de Lijiang conserva intacto y en su totalidad el casco antiguo, formado por pequeñas callejuelas empedradas, centenarias casas tradicionales y pequeños canales que recorren la ciudad con el agua pura y helada procedente de la Montaña del Dragón de Jade (5550m) que sirve, con su cima permanentemente cubierta de nieve, de símbolo de la minoría Naxi, los habitantes de Lijiang.
+          La impresionante montaña de Meili o Kawagarbo es una de las 14 montañas sagradas del budismo tibetano. Con más de 20 picos, 6 de los cuales superan los 6000m de altitud, cada año recibe más de 20.000 peregrinos.
           </p>
-          <%= image_tag('netlijiang.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
-          <p>La minoría Naxi desciende de los nómadas tibetanos y son seguidores de la religión Dongba, religión chamánico-animista. Lijiang fue declarada en 1999 Patrimonio de la Humanidad por la UNESCO.
+          <p>
+          Estas maravillosas montañas están situadas dentro de la Reserva Natural de los Tres Ríos Paralelos, declarada Patrimonio de la Humanidad por la UNESCO en 2003. Situada en la parte montañosa del noroeste de la provincia de Yunnan, está compuesto por ocho grupos de zonas protegidas que se hallan dentro del mismo parque.
+          </p>
+          <%= image_tag('meili.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+          <p>
+          Con una superficie de 1,7 millones de hectáreas, abarca tramos del curso superior de los tres grandes y legendarios ríos de Asia: el Yangtzé, el Mekong y el Nujiang que nacen en la meseta de Qinghai-Tibet y fluyen uno junto a otro de norte a sur a lo largo de más de 170 kilómetros, sorteando gargantas de hasta 3.000 metros de profundidad y flanqueados por picos de más de 6.000 metros de altura, coronados por nieves perpetuas.
+          </p>
+          <p>
+          La distancia que media entre los ríos Yangtzé y Mekong es de 66,3 kilómetros, mientras que la que separa los ríos Mekong y Nujiang es de sólo 18,6 kilómetros.
           </p>
           </div>
           <div class="cardtext description destination" id="shangrila_description" style="display:none;">
@@ -126,17 +173,10 @@
           </p>
           <p>Conocida también con el nombre de Shangri-La, tierra donde reina la paz y la serenidad, gracias a la novela de James Hilton “Lost Horizon”.
           </p>
-          <%= image_tag('netshangrila.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
+          <%= image_tag('shangrila.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
           <p>Los habitantes de esta región son de la minoría Zang (Tibetanos), su estilo de vida es propio de las altas mesetas tibetanas, su religión es el budismo tántrico y se dedican a la agricultura y al cuidado de los rebaños de yaks.
           </p>
           <p>Zhongdian también cuenta con el Monasterio Songzanglin. fundado hace 300 años, este monasterio tibetano es el más importante del Sudoeste de China y cuenta con más de 600 monjes. Es un maravilloso ejemplo de la armonía de la arquitectura tibetana con su entorno y para aquellos que no hayan visitado el Tíbet, es una espléndida introducción al estilo de vida del budismo tibetano.
-          </p>
-          <p>A unas pocas horas de Zhongdian se encuentra la Montaña de Mei Li o Kawakarpo. Situada en la frontera entre la Provincia de Yunnan y el Tíbet, cuenta con trece picos que superan los 6000m de altura, el más importante, el Pico Kawagebo con 6740m. Hasta ahora un “pico virgen” ya que nadie ha podido llegar a su cima.
-          </p>
-         <%= image_tag('shangrila2.jpg', style: 'width: 400px; display:block; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px') %>
-          <p>Esta montaña es una de las montañas sagradas del budismo tibetano y cada año, a principios de invierno, llegan miles de peregrinos debotos procedentes del Tíbet y de las provincias chinas de Qinghai, Sichuan y Gansu.
-          </p>
-          <p>En el corazón de la montaña encontramos el Glaciar Mingyong de 2600m de altura tiene una longitud total de 4 km y una anchura de 30 a 80 metros. Desde lejos el glaciar parece una enorme serpiente blanca sobre el paisaje verde de la montaña.
           </p>
           </div>
           <div class="cardtext description destination" id="shilin_description" style="display:none;">

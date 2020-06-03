@@ -1,4 +1,9 @@
 // Specific CSS for your home-page
+.wrapper {
+  min-height: 91vh;
+}
+
+
 .homepage {
   background-color: white;
   background-size: cover;
@@ -9,9 +14,6 @@
   position: relative;
 }
 
-.wrapper {
-  min-height: 91vh;
-}
 
 .homepagetitle {
   h2 {
@@ -25,7 +27,7 @@
   font-weight: normal;
 }
 
-.spanish {
+.languages {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -35,4 +37,31 @@
     font-weight: bold;
   }
   color: white;
+}
+
+// essai carrousel
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
 }
